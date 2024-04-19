@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,7 +22,7 @@ code {
   justify-content: flex-start;
   align-items: center;
   padding: 10px 20px;
-  background-color: #afacac;
+  background-color: grey;
 }
 
 .heading {
@@ -25,10 +30,11 @@ code {
   text-align: left;
 }
 
-.heading h1 {
-  text-decoration: none;
-  color: white;
+.navHeading {
+  text-decoration: none; /* Removes the underline */
+  color: white;          /* Sets the font color to white */
 }
+
 
 .navButton {
   flex: 1;
@@ -38,12 +44,13 @@ code {
 .navBtn {
   margin-left: 10px;
   margin-right: 10px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border: none;
   border-radius: 4px;
   background-color: #007bff;
   color: #fff;
-  font-weight: bold;
+  font-family: "Cutive Mono", monospace;
+  font-weight: 700;
   transition: background-colour 0.3s ease;
   cursor: pointer;
 }
