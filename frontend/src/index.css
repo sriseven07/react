@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
@@ -18,6 +19,11 @@ code {
 }
 
 .navbar {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  right: 20px;
+  border-radius: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -58,3 +64,52 @@ code {
 .navBtn:hover {
   background-color: #0056b3;
 }
+
+.menu {
+  position: fixed;
+  left: 20px;
+  bottom: 200px;
+  top: 120px;
+  border-radius: 20px;
+  background-color: grey;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu-item {
+  text-decoration: none;  /* This is redundant for div elements */
+  flex: 1;
+  padding: 10px;  /* Added padding */
+  width: 100%;  /* Added width to fill the container */
+  color: white;
+}
+
+.menu-item:hover {
+  background-color: #0056b3;
+  border-radius: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center items horizontally */
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  /* Styles for your icon */
+  /* Assuming the icon is a font or SVG, adjust styles accordingly */
+  font-size: 40px;        /* Adjust size as needed */
+  margin-bottom: 5px;     /* Space between icon and text */
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: inherit;         /* Inherits color from parent */
+}
+
+
