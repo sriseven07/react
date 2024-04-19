@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="navbar">
                 <div className="heading">
                     <Link>
-                        <h1 className='navHeading'>TESBI</h1>
+                        <h2 className='navHeading'>TESPA</h2>
                     </Link>
                 </div>
                 <div className="navButton">

@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: rgb(40, 40, 40);
 }
 
 code {
@@ -23,12 +23,20 @@ code {
   top: 10px;
   left: 20px;
   right: 20px;
+  height: 50px;
   border-radius: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 10px 20px;
-  background-color: grey;
+  /* background-color: rgb(60, 60, 60); */
+  /* From https://css.glass */
+  background: rgba(222, 212, 212, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 1px solid rgba(222, 212, 212, 0.13);
 }
 
 .heading {
@@ -37,6 +45,7 @@ code {
 }
 
 .navHeading {
+  
   text-decoration: none; /* Removes the underline */
   color: white;          /* Sets the font color to white */
 }
@@ -53,31 +62,47 @@ code {
   padding: 10px 30px;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
   color: #fff;
-  font-family: "Cutive Mono", monospace;
   font-weight: 700;
-  transition: background-colour 0.3s ease;
   cursor: pointer;
+  /* From https://css.glass */
+  background: rgba(9, 104, 224, 0.6);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  border: 1px solid rgba(9, 104, 224, 0.3);
 }
 
 .navBtn:hover {
-  background-color: #0056b3;
+  /* From https://css.glass */
+  background: rgba(9, 156, 224, 0.83);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(9, 156, 224, 0.3);
 }
 
 .menu {
   position: fixed;
   left: 20px;
-  bottom: 200px;
-  top: 120px;
+  bottom: 20px;
+  top: 100px;
   border-radius: 20px;
-  background-color: grey;
   width: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  /* From https://css.glass */
+  background: rgba(238, 241, 245, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  border: 1px solid rgba(238, 241, 245, 0.11);
 }
 
 .menu-item {
@@ -89,8 +114,13 @@ code {
 }
 
 .menu-item:hover {
-  background-color: #0056b3;
-  border-radius: 20px;
+  /* From https://css.glass */
+  background: rgba(238, 241, 245, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  border: 1px solid rgba(238, 241, 245, 0.57);
 }
 
 .menu-item {
@@ -103,7 +133,7 @@ code {
 .material-symbols-outlined {
   /* Styles for your icon */
   /* Assuming the icon is a font or SVG, adjust styles accordingly */
-  font-size: 40px;        /* Adjust size as needed */
+  font-size: 30px;        /* Adjust size as needed */
   margin-bottom: 5px;     /* Space between icon and text */
 }
 
