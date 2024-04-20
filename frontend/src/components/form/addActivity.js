@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { useActivityContext } from '../../hooks/useActivityContext'
 
 const AddActivity = () => {
+    const { dispatch } = useActivityContext()
     const [projectNumber, setProjectNumber] = useState("");
     const [ActivityName, setActivityName] = useState("");
     const [ActivityDescription, setActivityDescription] = useState("");
@@ -33,6 +35,7 @@ const AddActivity = () => {
             setActivityDescription('')
             setError(null)
             setEmptyFields([])
+            dispatch({type: 'CREATE_ACTIVITY', payload: json})
         }
     }
     return (
@@ -61,6 +64,7 @@ const AddActivity = () => {
                     onChange={(e) => setActivityDescription(e.target.value)}
                     value={ActivityDescription}
                     maxLength={4}
+                    rows={10}
                     className={emptyFields.includes('ActivityDescription') ? 'error': ''}
                 />
             </div>
