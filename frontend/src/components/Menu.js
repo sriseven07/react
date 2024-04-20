@@ -1,34 +1,35 @@
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
     return (
         <div className="menu">
             <div className="menu-item">
                 <span class="material-symbols-outlined">sprint</span>
-                <a href='#'>Activity</a>
+                <Link to="/activity">Activity</Link>
             </div>
             <div className="menu-item">
                 <span class="material-symbols-outlined">store</span>
-                <a href='#'>Store</a>
+                <Link to="/activity">Store</Link>
             </div>
             <div className="menu-item">
                 <span class="material-symbols-outlined">shopping_cart</span>
-                <a href='#'>Purchase</a>
+                <Link to="/activity">Purchase</Link>
             </div>
             <div className="menu-item">
                 <span class="material-symbols-outlined">currency_rupee</span>
-                <a href='#'>Accounts</a>
+                <Link to="/activity">Purchase</Link>
             </div>
             <div className="menu-item">
                 <span class="material-symbols-outlined">concierge</span>
-                <a href='#'>Enquiry</a>
+                <Link to="/activity">Enquiry</Link>
             </div>
             <div className="menu-item">
                 <span class="material-symbols-outlined">engineering</span>
-                <a href='#'>Project</a>
+                <Link to="/activity">Project</Link>
             </div>
             <div className="menu-item">
                 <span class="material-symbols-outlined">receipt_long</span>
-                <a href='#'>Support</a>
+                <Link to="/activity">Support</Link>
             </div>
         </div>
 
